@@ -1,0 +1,61 @@
+body {
+    background: radial-gradient(ellipse at center, #0a0a2a 0%, #000 100%);
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameContainer {
+    box-shadow: 0 0 32px #222;
+    border-radius: 16px;
+    background: rgba(10,10,30,0.95);
+    padding: 0;
+}
+
+canvas {
+    display: block;
+    border-radius: 16px;
+    background: #101033;
+    box-shadow: 0 0 16px 2px #03031a inset;
+    margin: 0;
+}
+.menu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(15,15,40,0.95);
+    padding: 32px 48px;
+    border-radius: 20px;
+    box-shadow: 0 0 32px 0 #1a1a44;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.menu h1 {
+    margin: 0 0 16px 0;
+    font-size: 2.2em;
+    color: #6cf;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #00faff44;
+}
+.menu button {
+    margin-top: 20px;
+    padding: 10px 32px;
+    font-size: 1.1em;
+    background: linear-gradient(90deg, #5cf 0%, #39f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0099ff44;
+    transition: background 0.2s, transform 0.2s;
+}
+.menu button:hover {
+    background: linear-gradient(90deg, #39f 0%, #6cf 100%);
+    transform: scale(1.05);
+}
